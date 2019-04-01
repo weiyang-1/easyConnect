@@ -1,0 +1,52 @@
+2019-04-01 10:57:27,160 - transport.py[line:1746] - INFO: Connected (version 2.0, client OpenSSH_7.2p2)
+2019-04-01 10:57:27,914 - transport.py[line:1746] - INFO: Authentication (publickey) failed.
+2019-04-01 10:57:27,928 - transport.py[line:1746] - INFO: Authentication (password) successful!
+2019-04-01 10:57:27,929 - easy_connect.py[line:28] - INFO: 登录服务器---192.168.0.111成功:
+2019-04-01 10:57:32,029 - easy_connect.py[line:44] - INFO: 退出服务器---192.168.0.111成功
+2019-04-01 10:58:08,588 - transport.py[line:1746] - INFO: Connected (version 2.0, client OpenSSH_7.2p2)
+2019-04-01 10:58:09,294 - transport.py[line:1746] - INFO: Authentication (publickey) failed.
+2019-04-01 10:58:09,305 - transport.py[line:1746] - INFO: Authentication (password) successful!
+2019-04-01 10:58:09,306 - easy_connect.py[line:28] - INFO: 登录服务器---192.168.0.111成功:
+2019-04-01 10:58:13,405 - easy_connect.py[line:44] - INFO: 退出服务器---192.168.0.111成功
+2019-04-01 11:05:09,168 - transport.py[line:1746] - INFO: Connected (version 2.0, client OpenSSH_7.2p2)
+2019-04-01 11:05:09,907 - transport.py[line:1746] - INFO: Authentication (publickey) failed.
+2019-04-01 11:05:09,920 - transport.py[line:1746] - INFO: Authentication (password) successful!
+2019-04-01 11:05:09,920 - easy_connect.py[line:28] - INFO: 登录服务器---192.168.0.111成功:
+2019-04-01 11:05:10,033 - easy_connect.py[line:76] - INFO: 服务器---192.168.0.111执行---cd /home/lemon;touch stop_zhipin.sh---成功
+2019-04-01 11:05:12,048 - easy_connect.py[line:76] - INFO: 服务器---192.168.0.111执行---cd /home/lemon;touch restart_zhipin.sh---成功
+2019-04-01 11:05:14,049 - easy_connect.py[line:44] - INFO: 退出服务器---192.168.0.111成功
+2019-04-01 11:05:14,058 - transport.py[line:1746] - INFO: Connected (version 2.0, client OpenSSH_7.2p2)
+2019-04-01 11:05:14,122 - transport.py[line:1746] - INFO: Authentication (publickey) failed.
+2019-04-01 11:05:14,133 - transport.py[line:1746] - INFO: Authentication (password) successful!
+2019-04-01 11:05:14,134 - easy_connect.py[line:28] - INFO: 登录服务器---192.168.0.111成功:
+2019-04-01 11:05:14,134 - easy_connect.py[line:79] - INFO: 服务器---192.168.0.111暂时没有任务
+2019-04-01 11:05:14,134 - easy_connect.py[line:44] - INFO: 退出服务器---192.168.0.111成功
+2019-04-01 11:15:25,662 - easy_run.py[line:46] - ERROR: 连接服务器{'ip': '192.168.0.114', 'user_name': 'lemon', 'pwd': '1234asdf'}失败
+2019-04-01 11:15:27,676 - transport.py[line:1746] - INFO: Connected (version 2.0, client OpenSSH_7.2p2)
+2019-04-01 11:15:28,350 - transport.py[line:1746] - INFO: Authentication (publickey) failed.
+2019-04-01 11:15:28,365 - transport.py[line:1746] - INFO: Authentication (password) successful!
+2019-04-01 11:15:28,365 - easy_connect.py[line:28] - INFO: 登录服务器---192.168.0.111成功:
+2019-04-01 11:15:28,465 - easy_run.py[line:54] - INFO: 服务器---192.168.0.111执行---cd /home/lemon;touch stop_zhipin.sh---成功
+2019-04-01 11:15:30,472 - easy_run.py[line:54] - INFO: 服务器---192.168.0.111执行---cd /home/lemon;touch restart_zhipin.sh---成功
+2019-04-01 11:15:32,473 - easy_connect.py[line:44] - INFO: 退出服务器---192.168.0.111成功
+2019-04-01 11:15:32,485 - transport.py[line:1746] - INFO: Connected (version 2.0, client OpenSSH_7.2p2)
+2019-04-01 11:15:32,553 - transport.py[line:1746] - INFO: Authentication (publickey) failed.
+2019-04-01 11:15:32,570 - transport.py[line:1746] - INFO: Authentication (password) successful!
+2019-04-01 11:15:32,570 - easy_connect.py[line:28] - INFO: 登录服务器---192.168.0.111成功:
+2019-04-01 11:15:32,570 - easy_run.py[line:57] - INFO: 服务器---192.168.0.111暂时没有任务
+2019-04-01 11:15:32,571 - easy_connect.py[line:44] - INFO: 退出服务器---192.168.0.111成功
+2019-04-01 11:30:03,594 - easy_run.py[line:21] - ERROR: 连接服务器192.168.0.114失败
+2019-04-01 11:30:05,604 - transport.py[line:1746] - INFO: Connected (version 2.0, client OpenSSH_7.2p2)
+2019-04-01 11:30:06,275 - transport.py[line:1746] - INFO: Authentication (publickey) failed.
+2019-04-01 11:30:06,293 - transport.py[line:1746] - INFO: Authentication (password) successful!
+2019-04-01 11:30:06,293 - easy_connect.py[line:28] - INFO: 登录服务器---192.168.0.111成功:
+2019-04-01 11:30:06,389 - easy_run.py[line:29] - INFO: 服务器---192.168.0.111执行---cd /home/lemon;touch stop_zhipin.sh---成功
+2019-04-01 11:30:08,396 - easy_run.py[line:29] - INFO: 服务器---192.168.0.111执行---cd /home/lemon;touch restart_zhipin.sh---成功
+2019-04-01 11:30:10,397 - easy_connect.py[line:44] - INFO: 退出服务器---192.168.0.111成功
+2019-04-01 11:30:10,464 - transport.py[line:1746] - INFO: Connected (version 2.0, client OpenSSH_7.2p2)
+2019-04-01 11:30:10,660 - transport.py[line:1746] - INFO: Authentication (publickey) failed.
+2019-04-01 11:30:10,728 - transport.py[line:1746] - INFO: Authentication (password) successful!
+2019-04-01 11:30:10,729 - easy_connect.py[line:28] - INFO: 登录服务器---192.168.11.189成功:
+2019-04-01 11:30:10,916 - easy_run.py[line:29] - INFO: 服务器---192.168.11.189执行---cd /home/liuchao;touch aaaa.py---成功
+2019-04-01 11:30:12,977 - easy_run.py[line:29] - INFO: 服务器---192.168.11.189执行---cd /home/liuchao;touch bbbb.py---成功
+2019-04-01 11:30:14,978 - easy_connect.py[line:44] - INFO: 退出服务器---192.168.11.189成功

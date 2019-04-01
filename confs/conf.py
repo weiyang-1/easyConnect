@@ -5,6 +5,26 @@
 
 # 服务器配置
 AliYun_jobs = {
+    "test": {
+        "ip": "192.168.0.114",
+        "user_name": "lemon",
+        "pwd": "1234asdf"
+    },
+    "huzheng": {
+        "ip": "192.168.0.111",
+        "user_name": "lemon",
+        "pwd": "1234asdf",
+        "jobs": [
+            {
+                "path": "/home/lemon",
+                "type": "touch stop_zhipin.sh"
+            },
+            {
+                "path": "/home/lemon",
+                "type": "touch restart_zhipin.sh"
+            }
+        ]
+    },
     "189":{
         "ip":"192.168.11.189",
         "user_name":"liuchao",
@@ -12,11 +32,11 @@ AliYun_jobs = {
         "jobs":[
             {
                 "path": "/home/liuchao",
-                "type": "stop_zhipin.sh"
+                "type": "touch aaaa.py"
             },
             {
                 "path": "/home/liuchao",
-                "type": "restart_zhipin.sh"
+                "type": "touch bbbb.py"
             }
         ]
     },

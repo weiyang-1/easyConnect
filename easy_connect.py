@@ -24,7 +24,7 @@ class EasyConnectHandle(object):
         self.ssh = paramiko.SSHClient()
         self.ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # 允许连接陌生服务器
         self.ssh.connect(hostname=self.connect_host["ip"], port=22, username=self.connect_host["user_name"],
-                         password=self.connect_host["pwd"])  # 初始化的时候连接到新的服务器
+                         password=self.connect_host["pwd"], timeout=10)  # 初始化的时候连接到新的服务器
         logger.info(f"登录服务器---{self.connect_host['ip']}成功:")
 
     def __new__(cls, *args, **kwargs):
@@ -48,20 +48,32 @@ if __name__ == '__main__':
         "huzheng": {
                 "ip": "192.168.0.111",
                 "user_name": "lemon",
-                "pwd": "1234asdf"
-            },
-        "yangwei": {
-                "ip": "192.168.92.131",
-                "user_name": "yangwei",
-                "pwd": "123456"
+                "pwd": "1234asdf",
+                "jobs": [
+                    {
+                        "path": "/home/lemon",
+                        "type": "touch stop_zhipin.sh"
+                    },
+                    {
+                        "path": "/home/lemon",
+                        "type": "touch restart_zhipin.sh"
+                    }
+                ]
+            }
         }
-        }
-    for i in ["huzheng"]:
-        easy_conn = EasyConnectHandle(test_host[i])
+    for i in ["huzheng", "yangwei"]:
+        try:
+            easy_conn = EasyConnectHandle(test_host[i])
+        except:
+            logger.error(f"连接服务器{test_host[i]}失败")
         transport = easy_conn.ssh.get_transport()
-        channel = transport.open_session()
-        channel.exec_command("touch c.py")
-        time.sleep(2)
+        if len(test_host[i].get("jobs", [])) >= 1:
+            for job in test_host[i]["jobs"]:
+                channel = transport.open_session()
+                channel.exec_command(f"cd {job['path']};{job['type']}")
+                logger.info(f"服务器---{easy_conn.connect_host['ip']}执行---cd {job['path']};{job['type']}---成功")
+                time.sleep(2)
+        else:
+            logger.info(f"服务器---{easy_conn.connect_host['ip']}暂时没有任务")
         easy_conn.quit()
-        time.sleep(2)
 
