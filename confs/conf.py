@@ -8,7 +8,17 @@ AliYun_jobs = {
     "189":{
         "ip":"192.168.11.189",
         "user_name":"liuchao",
-        "pwd":"jianxun1302"
+        "pwd":"jianxun1302",
+        "jobs":[
+            {
+                "path": "/home/liuchao",
+                "type": "stop_zhipin.sh"
+            },
+            {
+                "path": "/home/liuchao",
+                "type": "restart_zhipin.sh"
+            }
+        ]
     },
     "193": {
         "ip": "192.168.11.193",
@@ -18,37 +28,107 @@ AliYun_jobs = {
     "201": {
         "ip": "192.168.11.201",
         "user_name": "jianxun",
-        "pwd": "123!@#"
+        "pwd": "123!@#",
+        "jobs": [
+            {
+                "path": "/home/jianxun",
+                "type": "stop_zhipin.sh"
+            },
+            {
+                "path": "/home/jianxun",
+                "type": "restart_zhipin.sh"
+            }
+        ]
     },
     "202": {
         "ip": "192.168.11.202",
         "user_name": "jianxun",
-        "pwd": "123!@#"
+        "pwd": "123!@#",
+        "jobs": [
+            {
+                "path": "/home/jianxun",
+                "type": "stop_zhipin.sh"
+            },
+            {
+                "path": "/home/jianxun",
+                "type": "restart_zhipin.sh"
+            }
+        ]
     },
     "203": {
         "ip": "192.168.11.203",
         "user_name": "jianxun",
-        "pwd": "123!@#"
+        "pwd": "123!@#",
+        "jobs": [
+            {
+                "path": "/home/jianxun",
+                "type": "stop_zhipin.sh"
+            },
+            {
+                "path": "/home/jianxun",
+                "type": "restart_zhipin.sh"
+            }
+        ]
     },
     "205": {
         "ip": "192.168.11.205",
         "user_name": "jianxun",
-        "pwd": "123!@#"
+        "pwd": "123!@#",
+        "jobs": [
+            {
+                "path": "/home/jianxun",
+                "type": "stop_zhipin.sh"
+            },
+            {
+                "path": "/home/jianxun",
+                "type": "restart_zhipin.sh"
+            }
+        ]
     },
     "206": {
         "ip": "192.168.11.206",
         "user_name": "jianxun",
-        "pwd": "123!@#"
+        "pwd": "123!@#",
+        "jobs": [
+            {
+                "path": "/home/jianxun",
+                "type": "stop_zhipin.sh"
+            },
+            {
+                "path": "/home/jianxun",
+                "type": "restart_zhipin.sh"
+            }
+        ]
     },
     "244": {
         "ip": "192.168.11.244",
         "user_name": "jianxun",
-        "pwd": "123!@#"
+        "pwd": "123!@#",
+        "jobs": [
+            {
+                "path": "/home/jianxun",
+                "type": "stop_zhipin.sh"
+            },
+            {
+                "path": "/home/jianxun",
+                "type": "restart_zhipin.sh"
+            }
+        ]
     },
     "245": {
         "ip": "192.168.11.245",
         "user_name": "jianxun",
-        "pwd": "123!@#"
+        "pwd": "123!@#",
+        "jobs": [
+            {
+                "path": "/home/jianxun",
+                "type": "stop_zhipin.sh"
+            },
+            {
+                "path": "/home/jianxun",
+                "type": "restart_zhipin.sh"
+            }
+        ]
     }
 }
 
